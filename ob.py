@@ -12,14 +12,20 @@ from os import listdir, walk
 from os.path import isfile, join
 
 ## DIRECTORY Root of all the ONLINE BANKING SKIN
-App_Themes = os.listdir("ob/App_Themes")
-Images = os.listdir("ob/Images/Custom")
-Stylesheets = os.listdir("ob/Stylesheets")
-App_ThemesFolder = "ob/App_Themes"
-ImagesFolder = "ob/Images/Custom"
-StylesheetsFolder = "ob/Stylesheets"
-tempFolder = "ob/temp"
-
+# App_Themes = os.listdir("ob/App_Themes")
+# Images = os.listdir("ob/Images/Custom")
+# Stylesheets = os.listdir("ob/Stylesheets")
+# App_ThemesFolder = "ob/App_Themes"
+# ImagesFolder = "ob/Images/Custom"
+# StylesheetsFolder = "ob/Stylesheets"
+# tempFolder = "ob/temp"
+App_Themes = os.listdir("C:/Thiago/Web/CUOnlineBanking-Prod/CUOnlineBanking/App_Themes")
+Images = os.listdir("C:/Thiago/Web/CUOnlineBanking-Prod/CUOnlineBanking/Images/Custom")
+Stylesheets = os.listdir("C:/Thiago/Web/CUOnlineBanking-Prod/CUOnlineBanking/Stylesheets")
+App_ThemesFolder = "C:/Thiago/Web/CUOnlineBanking-Prod/CUOnlineBanking/App_Themes"
+ImagesFolder = "C:/Thiago/Web/CUOnlineBanking-Prod/CUOnlineBanking/Images/Custom"
+StylesheetsFolder = "C:/Thiago/Web/CUOnlineBanking-Prod/CUOnlineBanking/Stylesheets"
+tempFolder = "C:/Thiago/Web/CUOnlineBanking-Prod/CUOnlineBanking/temp"
 
 # LIST / SELECT / SETUP the new OB Skin
 def setSkinName():
@@ -32,10 +38,10 @@ def setSkinName():
         print "| - "+obFolder
     print "| ------------------------------------- |"
 
-    # Selecting the folder to copy
+    # Selecting the folde to copy
     setSkinName.copySkin = raw_input("| Copy SKIN folder from? ")
     if setSkinName.copySkin == "exit":
-        sys.exit()
+        return
     if not setSkinName.copySkin in App_Themes:
         print "| SKIN NAME - "+ setSkinName.copySkin +" - IS NOT ON THE LIST!"
         print "| Please try again..."
@@ -80,6 +86,8 @@ def createNewSkin(copySkin, newSkin):
     ### CUSTOM IMG
     copyImages = ImagesFolder+"/"+setSkinName.copySkin
     newSkinImages = ImagesFolder+"/"+setSkinName.newSkin
+    # copyImages = "ob/Images/Custom/"+setSkinName.copySkin
+    # newSkinImages = "ob/Images/Custom/"+setSkinName.newSkin
 
     print "| + Images/Custom"
     # Creating the NEW IMAGES SKIN FOLDER
@@ -97,6 +105,8 @@ def createNewSkin(copySkin, newSkin):
     ### APP THEMES
     copyFolder = App_ThemesFolder+"/"+setSkinName.copySkin
     newSkinFolder = App_ThemesFolder+"/"+setSkinName.newSkin
+    # copyFolder = "ob/App_Themes"+setSkinName.copySkin
+    # newSkinFolder = "ob/App_Themes"+setSkinName.newSkin
 
     # Creating the NEW MAIN SKIN FOLDER
     if not os.path.exists(newSkinFolder):
@@ -133,8 +143,8 @@ def createNewSkin(copySkin, newSkin):
     print "| --------------------------------------------------------- |"
     print "| - NEW Online Banking skin: "+setSkinName.newSkin+" created successfully!!"
     print "| --------------------------------------------------------- |"
-    # sys.exit()
-    setSkinStyle()
+    sys.exit()
+    # setSkinStyle()
     return
 
 # OPEN file and RENAME the SKIN
@@ -196,66 +206,70 @@ def setSkinStyle():
     # listing the folder again to refresh the new skin created
     App_Themes = os.listdir("ob/App_Themes")
     print ""
-    print "| ------------------------------------------------------- |"
-    print "| ------------ Online Banking CSS STYLE EDIT ------------ |"
-    print "| ------------------------------------------------------- |"
+    print "| --------------------------------------------- |"
+    print "| ------- Online Banking CSS STYLE EDIT ------- |"
+    print "| --------------------------------------------- |"
     # List all the OB skin
     for obFolder1 in App_Themes:
-        print "| - "+obFolder1
-    print "| ------------------------------------------------------- |"
+        print "| - "+obFolder
+    print "| --------------------------------------------- |"
 
-    # Selecting the folder to EDIT the style
+    # Selecting the folde to copy
     setSkinStyle.copySkin = raw_input("| Which OB SKIN do you want to EDIT the CSS? ")
-    if setSkinStyle.copySkin == "exit":
-        sys.exit()
     if not setSkinStyle.copySkin in App_Themes:
         print "| SKIN NAME - "+ setSkinStyle.copySkin +" - IS NOT ON THE LIST!"
         print "| Please try again..."
         setSkinStyle()
-    print "| ------------------------------------------------------- |"
+    print "| --------------------------------------------- |"
     print "| - CSS STYLE FROM: "+setSkinStyle.copySkin
-    print "| ------------------------------------------------------- |"
+    print "| --------------------------------------------- |"
 
-    # Setting the COLORS of the new OB skin
+    # Setting the name of the new OB skin
     setSkinStyle.mainMenuColor = raw_input("| Type the MENU MAIN color (eg. #a1b2b3): ")
     setSkinStyle.mainHoverColor = raw_input("| Type the MENU HOVER color (eg. #a1b2b3): ")
     setSkinStyle.mainSelectColor = raw_input("| Type the MENU SELECT color (eg. #a1b2b3): ")
-
-    cssBlock1 = "\n/* STYLE DONE BY PYTHON to update MENU, BACKGROUND and BORDERS COLORS */ \n/*1*/ \nbody { border-top:15px solid "+setSkinStyle.mainMenuColor+"; } \n.MenuPanel li { background: "+setSkinStyle.mainMenuColor+"; } \n.RadGrid_INTO .rgDetailTable .rgHeader { background: "+setSkinStyle.mainMenuColor+" !important; } /*transaction grid*/"
-    cssBlock2 = "\n/*2*/ \n.MenuPanel li:hover { background-color: "+setSkinStyle.mainHoverColor+"; } \n.footerPanel a:hover { color: "+setSkinStyle.mainHoverColor+";} \n.RadGrid_INTO .rgHeader, .RadGrid_INTO th.rgResizeCol { background: "+setSkinStyle.mainHoverColor+" !important; } /*main grid*/ \n.MenuPanel .LogoutButtonPanel a { background-color: "+setSkinStyle.mainHoverColor+"; border: 3px solid "+setSkinStyle.mainHoverColor+" !important;}"
-    cssBlock3 = "\n/*3*/ \n.MenuPanel a.menuItemSelected { background: "+setSkinStyle.mainSelectColor+"; } \n.MenuPanel .LogoutButtonPanel a:hover { background-color: "+setSkinStyle.mainSelectColor+"; border: 3px solid "+setSkinStyle.mainSelectColor+" !important; } \n.sectionHeader { background: "+setSkinStyle.mainSelectColor+";} \n.sectionContent { border-top: 2px solid "+setSkinStyle.mainSelectColor+"; }"
-
-    listCssFiles = os.walk(StylesheetsFolder).next()[2]
-    for editCssFile in listCssFiles:
-        if setSkinStyle.copySkin in editCssFile:
-            fileCss = StylesheetsFolder+"/"+editCssFile
-            with open(fileCss, "r+") as myfile:
-                text = myfile.read()
-                myfile.seek(0)
-                myfile.write(text)
-                myfile.write(cssBlock1)
-                myfile.write(cssBlock2)
-                myfile.write(cssBlock3)
-                myfile.truncate()
-                myfile.close()
-
-    print "| ------------------------------------------------------- |"
-    print "| "
-    print "| The stylesheet has been updated on "+fileCss
-    print "| "
+    print "| --------------------------------------------- |"
+    print "| CSS STYLE FROM: "+setSkinStyle.copySkin
     print "| MENU MAIN COLOR: "+setSkinStyle.mainMenuColor
     print "| MENU HOVER: "+setSkinStyle.mainHoverColor
     print "| MENU SELECT: "+setSkinStyle.mainSelectColor
+    print "| --------------------------------------------- |"
     print "| "
-    print "| ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ |"
-    print "| "
+
+    # /** NEW STYLE OB SKIN **/
+    # body {
+    #     border-top:15px solid #69aa2a;
+    # }
+    # .MenuPanel li {
+    #     background: #337dbc;
+    # }
+    # .MenuPanel li:hover { background-color: #185990; }
+    # .MenuPanel a.menuItemSelected { background: #003b71; }
+    # .MenuPanel .LogoutButtonPanel a:hover { color: #69aa2a; }
+    # /* grid*/
+    # .RadGrid_Castlecomer .rgDetailTable.BudgetItemsBalance .rgHeader { background:#69aa2a; }
+    # /*
+    # .MenuPanel .logoutButton:hover { border: 2px solid #69aa2a !important;}
+    # .MenuPanel .logoutButton:hover {background: url(../Images/Custom/Castlecomer/logout_btnB.jpg) no-repeat scroll right top rgba(0, 0, 0, 0); border: 2px solid #69aa2a !important; height: 34px; margin-top: 10px; padding: 0; width: 243px;}
+    # .MenuPanel .LogoutButtonPanel a {background: none; color: #2e3c56; display: block; font-weight: bold; padding-bottom: 3px; padding-left: 10px; padding-top: 3px; text-shadow: 1px 1px 1px #FFFFFF; text-align: left; line-height: 28px;}
+    # */
+    # .footerPanel {
+    #     background: #f1f1f1;
+    #     border-bottom: 15px solid #003b71;
+    # }
+    # .footerMenuPanel li a {
+    #     color:#333;
+    # }
+    # .footerMenuPanel li a:hover {
+    #     color:#000;
+    #     text-decoration:underline;
+    # }
+
     print "| NEW OB BANKING SKIN IS ALL DONE!"
-    print "| Now, you must to change the LOGO.SGV at Images/Custom/"+setSkinStyle.copySkin
+    print "| Now you must to change the logo.svg on the images folder."
     print "| "
-    print "| ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ |"
     sys.exit()
     return
 
 # SOFTWARE ROOT - Main Function
 setSkinName()
-#setSkinStyle()
