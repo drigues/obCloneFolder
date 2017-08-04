@@ -1,0 +1,171 @@
+div.RadToolTip_Thiago{position:absolute;cursor:default}
+div.RadToolTip_Thiago div.rtCallout{display:none}
+div.RadToolTip_Thiago.rtVisibleCallout div.rtCallout{display:block}
+div.RadToolTip_Thiago .rtWrapper{padding:0;margin:0;border-collapse:collapse}
+div.RadToolTip_Thiago .rtWrapper .rtWrapperTopLeft,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperTopRight,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperBottomLeft,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperBottomRight{width:3px;height:3px;line-height:1px;font-size:1px}
+div.RadToolTip_Thiago .rtWrapper .rtWrapperTopCenter,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperBottomCenter,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperTopLeft,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperTopRight,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperBottomLeft,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperBottomRight,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperTopCenter,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperBottomCenter,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperLeftMiddle,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperRightMiddle{background-color:#bdd6d9}
+div.RadToolTip_Thiago .rtWrapper .rtWrapperTopCenter,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperBottomCenter{height:3px;line-height:0;font-size:1px}
+div.RadToolTip_Thiago .rtWrapper .rtWrapperTopCenter{background-position:0 -66px}
+div.RadToolTip_Thiago .rtWrapper .rtWrapperBottomCenter{background-position:0 -120px}
+div.RadToolTip_Thiago .rtWrapper .rtWrapperLeftMiddle,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperRightMiddle{font-size:1px;width:3px}
+div.RadToolTip_Thiago .rtWrapper .rtWrapperLeftMiddle{background-position:0 0}
+div.RadToolTip_Thiago table.rtWrapper td.rtWrapperRightMiddle{background-position:-3px 0}
+div.RadToolTip_Thiago .rtWrapper .rtWrapperContent{font:normal 12px "Segoe UI",Arial,Sans-serif;height:100%;background-color:#bdd6d9;padding:7px!important;color:#3399cc;}
+div.RadToolTip_Thiago .rtWrapperTopCenter div.rtTitlebar{color:#;font:normal 14px "Segoe UI",Arial,Sans-serif;text-transform:uppercase;float:left;line-height:22px}
+div.RadToolTip_Thiago a.rtCloseButton{display:block;float:right;position:absolute;right:-9px;top:-13px;width:16px;height:16px;font-size:1px;line-height:1px;margin-top:5px;margin-right:3px;background-image:url('ToolTip/ToolTipSprites.png');background-position:0 0;background-repeat:no-repeat;text-indent:-9999px;outline:0}
+div.RadToolTip_Thiago a.rtCloseButton:hover{background-position:0 -16px}
+div.RadToolTip_Thiago div.rtCallout{position:absolute;height:11px;width:11px;line-height:0;font-size:1px;background-image:url('ToolTip/Callouts.gif');background-repeat:no-repeat}
+div.RadToolTip_Thiago .rtCalloutCenter{visibility:hidden}
+div.RadToolTip_Thiago .rtCalloutTopLeft{margin-top:-10px;margin-left:20px;background-position:0 -22px}
+div.RadToolTip_Thiago .rtCalloutTopCenter{left:50%;margin-top:-9px;margin-left:-10px;background-position:0 0}
+div.RadToolTip_Thiago .rtCalloutTopRight{left:100%;margin-top:-10px;margin-left:-25px;background-position:0 -11px}
+div.RadToolTip_Thiago .rtCalloutBottomCenter{top:100%;left:50%;margin-left:-10px;margin-top:-1px;background-position:0 -55px}
+div.RadToolTip_Thiago .rtCalloutBottomRight{top:100%;left:100%;margin-left:-40px;margin-top:-1px;background-position:0 -66px}
+div.RadToolTip_Thiago .rtCalloutBottomLeft{top:100%;margin-left:20px;margin-top:-1px;background-position:0 -77px}
+div.RadToolTip_Thiago .rtCalloutMiddleLeft{top:50%;margin-left:-10px;margin-top:-7px;background-position:0 -44px}
+div.RadToolTip_Thiago .rtCalloutMiddleRight{left:100%;top:50%;margin-left:-1px;margin-top:-10px;background-position:0 -33px}
+div.RadToolTip_Thiago .rtWrapper .rtWrapperTopLeft,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperTopCenter,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperTopRight,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperLeftMiddle,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperContent,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperRightMiddle,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperBottomLeft,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperBottomCenter,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperBottomRight{padding:0;border:0;border-collapse:collapse}
+div.RadToolTip_Thiago .rtWrapper .rtWrapperBottomCenter,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperBottomRight,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperBottomLeft{border-bottom:1px solid #bdd6d9}
+div.RadToolTip_Thiago .rtWrapper .rtWrapperBottomRight,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperRightMiddle,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperTopRight{border-right:1px solid #bdd6d9}
+div.RadToolTip_Thiago .rtWrapper .rtWrapperTopRight,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperTopCenter,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperTopLeft{border-top:1px solid #bdd6d9}
+div.RadToolTip_Thiago .rtWrapper .rtWrapperTopLeft,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperLeftMiddle,
+div.RadToolTip_Thiago .rtWrapper .rtWrapperBottomLeft{border-left:1px solid #bdd6d9}
+div.RadToolTip_Thiago.rtShadow .rtCalloutTopLeft,
+div.RadToolTip_Thiago.rtShadow .rtCalloutTopRight{margin-top:-10px}
+div.RadToolTip_Thiago.rtShadow .rtCalloutTopCenter{margin-top:-9px}
+div.RadToolTip_Thiago.rtShadow .rtCalloutMiddleRight{margin-left:-1px}
+div.RadToolTip_Thiago.rtShadow .rtCalloutMiddleLeft{margin-left:-10px}
+div.RadToolTip_Thiago.rtShadow .rtCalloutBottomRight,
+div.RadToolTip_Thiago.rtShadow .rtCalloutBottomCenter,
+div.RadToolTip_Thiago.rtShadow .rtCalloutBottomLeft{margin-top:-1px}
+div.RadToolTip_Thiago table.rtShadow td a.rtCloseButton{margin-right:auto;margin-top:auto}
+div.RadToolTip_Thiago .rtShadow td a.rtCloseButton{right:-7px;top:-7px}
+div.RadToolTip_Thiago.RadToolTip_rtl td a.rtCloseButton{right:auto}
+.RadToolTip_Thiago.rtLoading{background:url('Common/loading.gif') no-repeat center}
+div.RadToolTip_Thiago_rtl a.rtCloseButton,
+div.RadToolTip_Thiago_rtl a.rtCloseButton:hover{float:left;text-decoration:none;outline:0;left:-9px;top:-9px;margin-left:1px;right:auto;margin-right:auto}
+div.RadToolTip_Thiago_rtl div.rtTitlebar,
+div.RadToolTip_Thiago_rtl table.rtWrapper td.rtWrapperTopCenter div.rtTitlebar div{float:right}
+div.RadToolTip_Thiago_rtl .rtCalloutCenter{right:0;left:auto}
+div.RadToolTip_Thiago_rtl .rtCalloutTopLeft{margin-right:-8px;left:0}
+div.RadToolTip_Thiago_rtl .rtCalloutTopCenter{margin-right:10px}
+div.RadToolTip_Thiago_rtl .rtCalloutTopRight{margin-right:20px}
+div.RadToolTip_Thiago_rtl .rtCalloutBottomCenter{margin-right:10px}
+div.RadToolTip_Thiago_rtl .rtCalloutBottomRight{margin-right:40px}
+div.RadToolTip_Thiago_rtl .rtCalloutBottomLeft{margin-right:-20px;left:0}
+div.RadToolTip_Thiago_rtl .rtCalloutMiddleLeft{margin-right:10px;left:0}
+div.RadToolTip_Thiago_rtl .rtCalloutMiddleRight{margin-right:1px}
+*+html div.RadToolTip_Thiago_rtl.rtShadow .rtCalloutMiddleLeft{margin-right:10px!important}
+div.RadToolTip_Thiago.RadToolTip_rtl.rtShadow a.rtCloseButton,
+div.RadToolTip_Thiago.RadToolTip_rtl.rtShadow a.rtCloseButton:hover{float:left;left:-9px;top:-9px;right:auto}
+
+
+
+
+ DIV.RadToolTip_Thiago .rtWrapper DIV.rtTitlebar {
+
+	COLOR: #2E8BAB;
+
+}
+
+ DIV.RadToolTip_Thiago .rtWrapperContent {
+
+	COLOR: #2E8BAB;
+
+}
+
+ DIV.RadToolTip_Thiago TABLE.rtWrapper TD.rtWrapperTopLeft {
+
+	BACKGROUND-COLOR: #D2EFF9;
+
+}
+
+ DIV.RadToolTip_Thiago TABLE.rtWrapper TD.rtWrapperTopCenter {
+
+	BACKGROUND-COLOR: #D2EFF9;
+
+}
+
+ DIV.RadToolTip_Thiago TABLE.rtWrapper TD.rtWrapperTopRight {
+
+	BACKGROUND-COLOR: #D2EFF9;
+
+}
+
+ DIV.RadToolTip_Thiago TABLE.rtWrapper TD.rtWrapperLeftMiddle {
+
+	BACKGROUND-COLOR: #D2EFF9;
+
+}
+
+ DIV.RadToolTip_Thiago TABLE.rtWrapper TD.rtWrapperContent {
+
+	BACKGROUND-COLOR: #D2EFF9;
+
+}
+
+ DIV.RadToolTip_Thiago TABLE.rtWrapper TD.rtWrapperRightMiddle {
+
+	BACKGROUND-COLOR: #D2EFF9;
+
+}
+
+ DIV.RadToolTip_Thiago TABLE.rtWrapper TD.rtWrapperBottomLeft {
+
+	BACKGROUND-COLOR: #D2EFF9;
+
+}
+
+ DIV.RadToolTip_Thiago TABLE.rtWrapper TD.rtWrapperBottomCenter {
+
+	BACKGROUND-COLOR: #D2EFF9;
+
+}
+
+ DIV.RadToolTip_Thiago TABLE.rtWrapper TD.rtWrapperBottomRight {
+
+	BACKGROUND-COLOR: #D2EFF9;
+
+}
+
+ DIV.RadToolTip_Thiago .rtWrapper DIV.rtTitlebar {
+
+	COLOR: #0099CC;
+
+}
+
+ DIV.RadToolTip_Thiago .rtWrapperContent {
+
+	COLOR: #0099CC;
+
+}
+

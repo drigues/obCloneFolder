@@ -1,0 +1,117 @@
+.RadButton_Thiago {
+  font-family:"Segoe UI",Arial,Helvetica,sans-serif;
+  font-size:12px;}
+  /* RadButton Thiago Skin */ 
+  .RadButton_Thiago .rbDecorated {
+    font-family:"Raleway",sans-serif;
+	font-size:14px;
+	padding: 0 20px; }
+    .RadButtton_Thiago .rbSkinnedButton,
+    .RadButton_Thiago .rbDecorated, .RadButton_Thiago.rbVerticalButton, .RadButton_Thiago.rbVerticalButton .rbDecorated,
+    .RadButton_Thiago .rbSplitRight,
+    .RadButton_Thiago .rbSplitLeft {
+        /*background-image: url('Common/radFormSprite.png');
+    _background-image: url('Common/radFormSpriteIE6.png');*/
+        background-color: #319b52 ;
+        border-radius: 0px;
+        color: #ffffff;
+        height: auto;
+        line-height: normal;
+        padding: 8px 20px !important;
+        text-shadow: 0 -1px 0.5px rgba(0, 0, 0, 0.3);
+    }
+
+.RadButton .rbDecorated {
+
+}
+    
+  .RadButton_Thiago .rbToggleCheckbox,
+  .RadButton_Thiago .rbToggleCheckboxChecked,
+  .RadButton_Thiago .rbToggleCheckboxFilled,
+  .RadButton_Thiago .rbToggleRadio,
+  .RadButton_Thiago .rbToggleRadioChecked {
+    background-image: url('Common/radFormToggleSprite.png');
+    _background-image: url('Common/radFormToggleSpriteIE6.png'); }
+  .RadButton_Thiago.rbToggleButton, .RadButton_Thiago.rbToggleButton.rbDisabled:hover {
+    color:#262b24; }
+  .RadButton_Thiago.rbToggleButton:hover {
+    color:#3a7a28; }
+  .RadButton_Thiago.RadButton.rbLinkButton {
+	background-color:#33472d;
+	border:1px solid #527348;
+	_border:1px solid #527348!important;
+	color:#e6f2e1;}
+    .RadButton_Thiago.RadButton.rbLinkButton:hover {
+      background-color:#7eed5f;
+	  _border:1px solid #527348!important;
+	  color:#3a7a28; }
+  .RadButton_Thiago.RadButton.rbLinkButtonChecked, .RadButton_Thiago.RadButton.rbLinkButtonChecked:hover {
+    background-color:#61d640;
+	color:white;
+	border:1px solid #4a8c38; }
+  .RadButton_Thiago.rbLinkButton.rbDisabled, .RadButton_Thiago.rbLinkButton.rbDisabled:hover {
+    background-color:#33472d;
+	border:1px solid #527348;
+	color:#7b9e72; }
+  .RadButton_Thiago.rbLinkButton:hover .rbSplitLeft, .RadButton_Thiago.rbLinkButton:hover .rbSplitRight {
+    background-color:#33472d; }
+  .RadButton_Thiago.rbLinkButton .rbSplitRight {
+    border-left:1px solid #527348; }
+  .RadButton_Thiago.rbLinkButton .rbSplitRight:hover {
+    background-color:#7eed5f;
+	border-left:1px solid #63ab4f; }
+  .RadButton_Thiago.rbLinkButton .rbSplitRight:active, .RadButton_Thiago.rbLinkButton .rbSplitRight:focus {
+    background-color:#61d640;
+	border-left:1px solid #63ab4f; }
+  .RadButton_Thiago.rbLinkButton .rbSplitLeft {
+    border-right:1px solid #527348; }
+  .RadButton_Thiago.rbLinkButton .rbSplitLeft:hover {
+    background-color:#7eed5f;
+	border-right:1px solid #63ab4f; }
+  .RadButton_Thiago.rbLinkButton .rbSplitLeft:active, .RadButton_Thiago.rbLinkButton .rbSplitLeft:focus {
+    background-color:#61d640;
+	border-right:1px solid #63ab4f; }
+  .RadButton_Thiago.rbLinkButton.rbDisabled .rbSplitLeft, .RadButton_Thiago.rbLinkButton.rbDisabled .rbSplitLeft:hover, .RadButton_Thiago.rbLinkButton.rbDisabled .rbSplitLeft:active, .RadButton_Thiago.rbLinkButton.rbDisabled .rbSplitLeft:focus {
+    border-right:1px solid #527348; }
+  .RadButton_Thiago.rbLinkButton.rbDisabled .rbSplitRight, .RadButton_Thiago.rbLinkButton.rbDisabled .rbSplitRight:hover, .RadButton_Thiago.rbLinkButton.rbDisabled .rbSplitRight:active, .RadButton_Thiago.rbLinkButton.rbDisabled .rbSplitRight:focus {
+    border-left:1px solid #527348; }
+  .RadButton_Thiago.rbLinkButton.rbRounded {
+    border-color:#527348;color:#e6f2e1;
+	background-color:#33472d;
+	background-image:-webkit-linear-gradient(top,#66825f 0,#41573b 50%,#33472d 50%,#1f2b1c 100%);		 		
+	background-image:-moz-linear-gradient(top,#66825f 0,#41573b 50%,#33472d 50%,#1f2b1c 100%);
+	background-image:-ms-linear-gradient(top,#66825f 0,#41573b 50%,#33472d 50%,#1f2b1c 100%);	 
+	background-image:-o-linear-gradient(top,#66825f 0,#41573b 50%,#33472d 50%,#1f2b1c 100%);
+	background-image:linear-gradient(top,#66825f 0,#41573b 50%,#33472d 50%,#1f2b1c 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#66825f',endColorstr='#1f2b1c',GradientType=0) }
+  .RadButton_Thiago.rbLinkButton.rbRounded:hover {
+    border-color:#63ab4f;
+	color:#3a7a28;
+	background-color:#7eed5f;
+	background-image:-webkit-linear-gradient(top,#80ed61 0,#72e653 50%,#77e05a 50%,#66d647 100%);
+	background-image:-moz-linear-gradient(top,#80ed61 0,#72e653 50%,#77e05a 50%,#66d647 100%);
+	background-image:-ms-linear-gradient(top,#80ed61 0,#72e653 50%,#77e05a 50%,#66d647 100%);
+	background-image:-o-linear-gradient(top,#80ed61 0,#72e653 50%,#77e05a 50%,#66d647 100%);
+	background-image:linear-gradient(top,#80ed61 0,#72e653 50%,#77e05a 50%,#66d647 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#80ed61',endColorstr='#66d647',GradientType=0) }
+  .RadButton_Thiago.rbLinkButton.rbRounded:active, .RadButton_Thiago.rbLinkButton.rbRounded:focus {
+    border-color:#4a8c38;
+	color:white;
+	background-color:#61d640;
+	background-image:-webkit-linear-gradient(top,#72fc4c 0,#67d948 50%,#61d640 50%,#58bf3b 100%);
+	background-image:-moz-linear-gradient(top,#72fc4c 0,#67d948 50%,#61d640 50%,#58bf3b 100%);
+	background-image:-ms-linear-gradient(top,#72fc4c 0,#67d948 50%,#61d640 50%,#58bf3b 100%);
+	background-image:-o-linear-gradient(top,#72fc4c 0,#67d948 50%,#61d640 50%,#58bf3b 100%);
+	background-image:linear-gradient(top,#72fc4c 0,#67d948 50%,#61d640 50%,#58bf3b 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#72fc4c',endColorstr='#58bf3b',GradientType=0)}
+  .RadButton_Thiago.rbLinkButton.rbRounded.rbDisabled, .RadButton_Thiago.rbLinkButton.rbRounded.rbDisabled:hover, .RadButton_Thiago.rbLinkButton.rbRounded.rbDisabled:active, .RadButton_Thiago.rbLinkButton.rbRounded.rbDisabled:focus {
+    border-color:#527348;
+	color:#7b9e72;
+	background-color:#33472d;
+	background-image:-webkit-linear-gradient(top,#66825f 0,#41573b 50%,#33472d 50%,#1f2b1c 100%);
+	background-image:-moz-linear-gradient(top,#66825f 0,#41573b 50%,#33472d 50%,#1f2b1c 100%);
+	background-image:-ms-linear-gradient(top,#66825f 0,#41573b 50%,#33472d 50%,#1f2b1c 100%);  
+	background-image:-o-linear-gradient(top,#66825f 0,#41573b 50%,#33472d 50%,#1f2b1c 100%);
+	background-image:linear-gradient(top,#66825f 0,#41573b 50%,#33472d 50%,#1f2b1c 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#66825f',endColorstr='#1f2b1c',GradientType=0);background-position:0 0 }
+

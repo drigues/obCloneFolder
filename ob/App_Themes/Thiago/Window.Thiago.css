@@ -1,0 +1,187 @@
+/* Window/TitleBar.gif")%> */
+/* RadWindow for ASP.NET AJAX WebBlue Skin */
+
+/* Window Background */
+
+/* Horiznotal */
+.RadWindow_Thiago .rwTopLeft,
+.RadWindow_Thiago .rwTopRight,
+.RadWindow_Thiago .rwTitlebar,
+.RadWindow_Thiago .rwFooterLeft,
+.RadWindow_Thiago .rwFooterRight,
+.RadWindow_Thiago .rwFooterCenter,
+.RadWindow_Thiago .rwTopResize,
+.RadWindow_Thiago .rwStatusbar div,
+.RadWindow_Thiago .rwStatusbar,
+.RadWindow_Thiago .rwPopupButton,
+.RadWindow_Thiago .rwPopupButton span,
+.RadWindow_Thiago.rwMinimizedWindow .rwCorner
+{
+    background-image: url('Window/WindowHorizontalSprites.gif');
+}
+
+/* Vertical */
+.RadWindow_Thiago .rwBodyLeft,
+.RadWindow_Thiago .rwBodyRight,
+.RadWindow_Thiago .rwStatusbarRow .rwCorner
+{
+	background-image: url('Window/WindowVerticalSprites.gif');
+}
+
+/* Window Shadows */
+
+/* Horiznotal */
+.RadWindow_Thiago .rwShadow .rwTopLeft,
+.RadWindow_Thiago .rwShadow .rwTopRight,
+.RadWindow_Thiago .rwShadow .rwTitlebar,
+.RadWindow_Thiago .rwShadow .rwFooterLeft,
+.RadWindow_Thiago .rwShadow .rwFooterRight,
+.RadWindow_Thiago .rwShadow .rwFooterCenter,
+.RadWindow_Thiago .rwShadow .rwTopResize,
+.RadWindow_Thiago .rwShadow .rwStatusbar div,
+.RadWindow_Thiago .rwShadow .rwStatusbar,
+.RadWindow_Thiago .rwShadow .rwPopupButton,
+.RadWindow_Thiago .rwShadow .rwPopupButton span,
+.RadWindow_Thiago .rwShadow .rwBodyLeft,
+.RadWindow_Thiago .rwShadow .rwBodyRight,
+.RadWindow_Thiago .rwShadow .rwStatusbarRow .rwBodyLeft,
+.RadWindow_Thiago .rwShadow .rwStatusbarRow .rwBodyRight
+{
+	background-image: url('Window/WindowHorizontalSprites.png');
+}
+
+/* Vertical */
+.RadWindow_Thiago .rwShadow .rwBodyLeft,
+.RadWindow_Thiago .rwShadow .rwBodyRight,
+.RadWindow_Thiago .rwShadow .rwStatusbarRow .rwBodyLeft,
+.RadWindow_Thiago .rwShadow .rwStatusbarRow .rwBodyRight
+{
+	background-image: url('Window/WindowVerticalSprites.png');
+}
+
+/* Shadows End */
+
+.RadWindow_Thiago .rwStatusbar input
+{
+    background-color: #f7f3e9;
+}
+
+.RadWindow_Thiago .rwControlButtons a
+{
+    background-image: url('Window/CommandButtonSprites.gif');
+}
+
+.RadWindow_Thiago a.rwIcon
+{
+	background-image: url('Window/WindowHorizontalSprites.gif');
+}
+
+div.RadWindow_Thiago .rwTitlebarControls em
+{
+	color: #404041;
+    letter-spacing: 0.2px;
+}
+
+div.RadWindow_Thiago .rwDialogInput
+{
+	border: solid 1px #768ca5;
+}
+
+div.RadWindow_Thiago .rwDialogInput:hover
+{
+	border-color: #5d9fb7;
+}
+
+div.RadWindow_Web20 td.rwWindowContent
+{
+    background-color: #fff !important;
+}
+
+div.RadWindow_Thiago td.rwWindowContent
+{
+    background-color: #fff;
+}
+
+/* Loading Indicators */
+div.RadWindow_Thiago tr td.rwLoading
+{
+    background-color: #e6edee;
+}
+
+/* When ShowContentDuringLoad="true" */
+div.RadWindow_Thiago td.rwWindowContent.rwLoading
+{
+    background-image: url('Common/loading.gif');
+}
+
+/* When ShowContentDuringLoad="false" */
+div.RadWindow_Thiago input.rwLoading
+{
+    background-image: url('Common/loading_small.gif');
+}
+
+/* Shadow Control Buttons */
+
+.RadWindow_Thiago .rwShadow .rwControlButtons 
+{
+	margin: 5px -2px 0 0;
+}
+
+.RadWindow_Thiago .rwShadow .rwControlButtons 
+{
+	margin: 5px -1px 0 0\9;
+}
+
+/* ctrl buttons when winodw is minimized */
+.RadWindow_Thiago.rwMinimizedWindowShadow .rwShadow .rwControlButtons 
+{
+	margin: 9px -8px 0 0;
+}
+
+.RadWindow_Thiago .rwShadow .rwControlButtons li
+{
+	float: left;
+	padding: 0;
+}
+
+.RadWindow_Thiago .rwShadow .rwControlButtons a
+{
+	width: 30px; 
+}
+
+.rwInactiveWindow .rwShadow .rwTopLeft,
+.rwInactiveWindow .rwShadow .rwTopRight,
+.rwInactiveWindow .rwShadow .rwTitlebar,
+.rwInactiveWindow .rwShadow .rwFooterLeft,
+.rwInactiveWindow .rwShadow .rwFooterRight,
+.rwInactiveWindow .rwShadow .rwFooterCenter,
+.rwInactiveWindow .rwShadow .rwTopResize,
+.rwInactiveWindow .rwShadow .rwStatusbar div,
+.rwInactiveWindow .rwShadow .rwStatusbar,
+.rwInactiveWindow .rwShadow .rwPopupButton,
+.rwInactiveWindow .rwShadow .rwPopupButton span,
+.rwInactiveWindow .rwShadow.rwMinimizedWindow .rwCorner,
+.RadWindow_Thiago.rwNoTitleBar.rwInactiveWindow .rwShadow .rwTopLeft,
+.RadWindow_Thiago.rwNoTitleBar.rwInactiveWindow .rwShadow .rwTitlebar,
+.RadWindow_Thiago.rwNoTitleBar.rwInactiveWindow .rwShadow .rwTopRight,
+.RadWindow_Thiago.rwNoTitleBar.rwInactiveWindow .rwShadow .rwFooterLeft,
+.RadWindow_Thiago.rwNoTitleBar.rwInactiveWindow .rwShadow .rwFooterCenter,
+.RadWindow_Thiago.rwNoTitleBar.rwInactiveWindow .rwShadow .rwFooterRight
+{
+    background-image: url('Window/WindowHorizontalSprites.gif') !important;
+}
+
+.rwInactiveWindow .rwShadow .rwBodyLeft,
+.rwInactiveWindow .rwShadow .rwBodyRight,
+.rwInactiveWindow .rwShadow .rwStatusbarRow .rwCorner,
+.RadWindow_Thiago.rwNoTitleBar.rwInactiveWindow .rwShadow .rwBodyLeft,
+.RadWindow_Thiago.rwNoTitleBar.rwInactiveWindow .rwShadow .rwBodyRight
+{
+	background-image: url('Window/WindowVerticalSprites.gif') !important;
+}
+.RadWindow .rwWindowContent .radalert {background-image: url('Window/alert_icon.gif') !important;}
+.RadWindow .rwWindowContent .radconfirm {background-image: url('Window/confirm_icon.gif') !important; background-position:left top !important;}
+div.RadWindow .rwDialogText { text-align: left; white-space: normal; width: 250px; padding-bottom:10px;}
+div.RadWindow .rwTable { height: auto !important; table-layout: auto; width: 100%;} /*TEMPORARY SOLUTION - used !important to overwrite rwTable inlined css rule (height:200)*/
+div.RadWindow .rwDialogPopup { color: #25638A; cursor: default; font: 11px Verdana, sans-serif;}
+div.RadWindow {width: auto !important;}
